@@ -1,0 +1,15 @@
+{
+    "semi": true,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "printWidth": 80,
+    "prettier/prettier": [
+        "error",
+        {},
+        {
+            "fileInfoOptions": {
+                "withNodeModules": true
+            }
+        }
+    ]
+}

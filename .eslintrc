@@ -1,0 +1,182 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "useJSXTextNode": true
+    },
+    "extends": [
+        "plugin:react/jsx-runtime",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "unused-imports",
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "window": true,
+        "document": true,
+        "localStorage": true,
+        "FormData": true,
+        "FileReader": true,
+        "Blob": true,
+        "navigator": true,
+        "Headers": true,
+        "Request": true,
+        "fetch": true
+    },
+    "settings": {},
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "prettier/prettier": [
+            2,
+            {
+                "useTabs": true
+            }
+        ],
+        // suppress errors for missing 'import React' in files
+        "react/react-in-jsx-scope": "off",
+        "react/function-component-definition": [
+            0,
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        // allow jsx syntax in js files (for next.js project)
+        "import/no-extraneous-dependencies": "off",
+        "object-shorthand": 0,
+        "no-nested-ternary": "off",
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/no-empty-interface": 0,
+        "import/extensions": "off",
+        "import/no-unresolved": [
+            "off",
+            {
+                "caseSensitive": false
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/prop-types": 0,
+        "no-underscore-dangle": 0,
+        "import/imports-first": [
+            "error",
+            "absolute-first"
+        ],
+        "import/newline-after-import": "error",
+        "import/prefer-default-export": 0,
+        "semi": "error",
+        "vars-on-top": "error",
+        "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "args": "none",
+                "ignoreRestSiblings": true,
+                "varsIgnorePattern": "\\w+"
+            }
+        ],
+        "no-unreachable": "error",
+        "prefer-const": "error",
+        "no-const-assign": "error",
+        "no-duplicate-imports": [
+            "error",
+            {
+                "includeExports": true
+            }
+        ],
+        "valid-typeof": [
+            "error",
+            {
+                "requireStringLiterals": true
+            }
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "no-empty-pattern": "error",
+        "react/display-name": "off",
+        "react/destructuring-assignment": "off",
+        "react/prefer-stateless-function": [
+            "warn",
+            {
+                "ignorePureComponents": true
+            }
+        ],
+        "react/jsx-wrap-multilines": "error",
+        "react/jsx-no-bind": "off",
+        "react/no-danger-with-children": "off",
+        "no-dupe-args": "error",
+        "no-func-assign": "error",
+        "for-direction": "error",
+        "no-dupe-else-if": "error",
+        "no-empty": "error",
+        "no-debugger": "error",
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "error"
+                ]
+            }
+        ],
+        "no-undef": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "no-sparse-arrays": "error",
+        "no-template-curly-in-string": "error",
+        "no-cond-assign": "error",
+        "no-constant-condition": "error",
+        "brace-style": "warn",
+        "no-self-compare": "warn",
+        "camelcase": [
+            "error",
+            {
+                "ignoreDestructuring": true,
+                "allow": [
+                    "^UNSAFE_"
+                ]
+            }
+        ]
+    }
+}
